@@ -11,12 +11,13 @@ import { blueGrey } from '@mui/material/colors';
 import Switch from '@mui/material/Switch';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import IconButton from '@mui/material/IconButton';
+import Paper from '@mui/material/Paper';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 export default function Navigation() {
     return (
-        <div class="container">
+        <Paper elevation={9} class="container">
             <div class="box1"><HomeIcon sx={{ color: blueGrey[500] }}/></div>
             <div class="box2">Homepage</div>
 
@@ -40,10 +41,10 @@ export default function Navigation() {
 
             <div class="box1"><ModeNightIcon sx={{ color: blueGrey[500] }}/></div>
             <div class="box3"><Switch {...label} size="small"/></div>
-            {/* <Container className="emptySpacing"></Container> */}
+            
             <IconButton aria-label="pluscircle" className="addButton">
-            <AddCircleIcon fontSize="large" color ="primary" />
-        </IconButton>
-        </div>
+                <AddCircleIcon fontSize="large" color ="primary" />
+            </IconButton>
+        </Paper>
     )
 }
