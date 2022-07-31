@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+}
+
+.rowOne {
+  flex-direction: column;
+}
+
+.container {
+  height: 100%;
+  width: 250px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-auto-rows: 50px;
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.box1 {
+  text-align: right;
+}
+
+.box2 {
+  text-align: left;
+  padding: 3px;
+  padding-left: 25px;
+}
+
+.box3 {
+  text-align: left;
+  padding-left: 25px;
+}
+
+.emptySpacing {
+  width: 125px;
+  height: 50px;
+}
