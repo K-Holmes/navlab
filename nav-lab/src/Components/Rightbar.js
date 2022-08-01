@@ -24,13 +24,13 @@ const itemData = [
 
 export default function Rightbar() {
     return (
-         <><div>
+         <><div className="rightBar"><div>
             <p>Online Friends</p>
-            <Avatar alt="Remy Sharp" src={ProfilePic} />
+            <Avatar className = "onlineUsers" alt="Remy Sharp" src={ProfilePic}/>
         </div>
             <div>
-                <p>Latest Photos</p>
-                <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                <p className="bottomPadRemove">Latest Photos</p>
+                <ImageList className = "imageListPad" sx={{ width: 250, height: 75 }} cols={3} rowHeight={75}>
                     {itemData.map((item) => (
                         <ImageListItem key={item.img}>
                             <img
@@ -43,7 +43,18 @@ export default function Rightbar() {
                 </ImageList>
             </div>
             <div>
-                <p>Lastest Conversations</p>
-            </div></>
+                <p>Latest Conversations</p>
+                <div className = "convoGrid">
+                  <div>
+                      <Avatar alt="Trevor" src=""/>
+                  </div>
+                  <div className = "removePadding">
+                      <strong>Subject Line</strong>
+                      <p>User Reply</p>
+                      <small>Message Content</small>
+                  </div>
+                </div>
+
+            </div></div></>
     )
 }

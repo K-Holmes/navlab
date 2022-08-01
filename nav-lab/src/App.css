@@ -35,3 +35,30 @@
   width: 125px;
   height: 50px;
 }
+
+.rightBar {
+  height: 675px;
+  width: 250px;
+  text-align: left;
+}
+.onlineUsers {
+  left: 200px;
+}
+
+.imageListPad {
+  padding-left: 25px;
+}
+
+.bottomPadRemove {
+  padding: 0;
+}
+
+.convoGrid {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-auto-rows: 50px;
+}
+
+.removePadding {
+  padding: 0;
+}
