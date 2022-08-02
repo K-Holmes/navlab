@@ -51,14 +51,28 @@
 
 .bottomPadRemove {
   padding: 0;
+  margin: 0;
 }
 
 .convoGrid {
   display: grid;
   grid-template-columns: max-content max-content;
-  grid-auto-rows: 50px;
+  grid-auto-rows: max-content;
 }
 
 .removePadding {
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+.boldText {
+  font-weight: 550;
+}
+
+.padRight {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
 }

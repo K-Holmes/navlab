@@ -6,6 +6,10 @@ import ProfilePic from './Ducks.JPG';
 import ImageOne from './PostOne.webp';
 import ImageTwo from './PostTwo.webp';
 import ImageThree from './PostThree.webp';
+import Bella from './Bella.png';
+import Pierce from './Pierce.png';
+import Ralph from './Ralph.png';
+import Divider from '@mui/material/Divider';
 
 const itemData = [
     {
@@ -25,7 +29,7 @@ const itemData = [
 export default function Rightbar() {
     return (
          <><div className="rightBar"><div>
-            <p>Online Friends</p>
+            <p className = "bottomPadRemove">Online Friends</p>
             <Avatar className = "onlineUsers" alt="Remy Sharp" src={ProfilePic}/>
         </div>
             <div>
@@ -46,12 +50,30 @@ export default function Rightbar() {
                 <p>Latest Conversations</p>
                 <div className = "convoGrid">
                   <div>
-                      <Avatar alt="Trevor" src=""/>
+                      <Avatar alt="Trevor" src = {Pierce} className="padRight"/>
                   </div>
                   <div className = "removePadding">
-                      <strong>Subject Line</strong>
-                      <p>User Reply</p>
-                      <small>Message Content</small>
+                      <strong>On the matter of ducks</strong>
+                      <p className = "removePadding"><p className="removePadding boldText">Ezekiel Hamsworth-</p> Ducks are so cool! I
+                      especially love when they <small>...</small></p>
+                      <Divider />
+                  </div>
+                  <div>
+                      <Avatar alt="Cheese" src= {Ralph}/>
+                  </div>
+                  <div className = "removePadding">
+                      <strong>Tonight's Game</strong>
+                      <p className = "removePadding"><p className="removePadding boldText">Zed Manning-</p> Hey, just reaching out to
+                      confirm if you're making it to my <small>...</small></p>
+                      <Divider />
+                  </div>
+                  <div>
+                      <Avatar alt="Token" src= {Bella}/>
+                  </div>
+                  <div className = "removePadding">
+                      <strong>History Class</strong>
+                      <p className = "removePadding"><p className="removePadding boldText">Laura Sidley-</p> Good evening class,
+                      today's meeting will be held at <small>...</small></p>
                   </div>
                 </div>
 
