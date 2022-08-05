@@ -76,3 +76,11 @@
   width: 40px;
   height: 40px;
 }
+
+.cardSize {
+  max-width: 250px;
+  align-self: center;
+  background-color: thistle;
+  border-color: aqua;
+  padding: 15px;
+}

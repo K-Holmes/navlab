@@ -1,12 +1,14 @@
 
 import './App.css';
 //import Navigation from './Components/Navigation';
-import Rightbar from './Components/Rightbar';
+//import Rightbar from './Components/Rightbar';
+import MainFeed from './Components/MainFeedCopy';
 
 function App() {
   return (
     <div className="App">
-      <Rightbar/>
+      {/* <Rightbar/> */}
+      <MainFeed/>
     </div>
   );
 }
